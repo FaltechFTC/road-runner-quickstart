@@ -41,11 +41,11 @@ import static org.firstinspires.ftc.teamcode.drive.DriveConstants.GEAR_RATIO;
  */
 public class TwoWheelTrackingLocalizer extends TwoTrackingWheelLocalizer {
 
-    public static double PARALLEL_X = 6; // X is the up and down direction
-    public static double PARALLEL_Y = 0; // Y is the strafe direction
+    public static double PARALLEL_X = 5; // X is the up and down direction
+    public static double PARALLEL_Y = 5; // Y is the strafe direction
 
-    public static double PERPENDICULAR_X = 0;
-    public static double PERPENDICULAR_Y = 6;
+    public static double PERPENDICULAR_X = -5;
+    public static double PERPENDICULAR_Y = 5;
 
     // Parallel/Perpendicular to the forward axis
     // Parallel wheel is parallel to the forward axis
@@ -56,8 +56,8 @@ public class TwoWheelTrackingLocalizer extends TwoTrackingWheelLocalizer {
 
     public TwoWheelTrackingLocalizer(HardwareMap hardwareMap, SampleMecanumDrive drive) {
         super(Arrays.asList(
-                new Pose2d(PARALLEL_X, PARALLEL_Y, 0),
-                new Pose2d(PERPENDICULAR_X, PERPENDICULAR_Y, Math.toRadians(90))
+                new Pose2d(PARALLEL_X, PARALLEL_Y, Math.toRadians(-45)),
+                new Pose2d(PERPENDICULAR_X, PERPENDICULAR_Y, Math.toRadians(45))
         ));
 
         this.drive = drive;

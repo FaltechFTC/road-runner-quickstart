@@ -20,7 +20,7 @@ public class DriveConstants {
     /*
      * These are motor constants that should be listed online for your motors.
      */
-    public static final double TICKS_PER_REV = ((((1+(46/17))) * (1+(46/11))) * 28); // = 537.7 for 312 rpm gobilda
+    public static final double TICKS_PER_REV = 537.7; // = 537.7 for 312 rpm gobilda
     public static final double MAX_RPM = 312 ;
 
     /*
@@ -44,7 +44,7 @@ public class DriveConstants {
      * convenience. Make sure to exclude any gear ratio included in MOTOR_CONFIG from GEAR_RATIO.
      */
     public static double WHEEL_RADIUS = 3; // in
-    public static double GEAR_RATIO = (((1+(46/17))) * (1+(46/11))); // output (wheel) speed / input (motor) speed == 19.2
+    public static double GEAR_RATIO = 1.0; // output (wheel) speed / input (motor) speed == 19.2
     public static double TRACK_WIDTH = 10; // in
 
     /*
